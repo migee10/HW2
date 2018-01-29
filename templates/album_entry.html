@@ -1,0 +1,29 @@
+<!-- <html>
+<title> </title>
+<body>
+<form method = "POST" action="http://localhost:5000/album_result">
+  {{ form.hidden_tag() }}
+  {% for message in get_flashed_messages() %}
+  {{ message }}
+  {% endfor %}
+<h3>{{ form.name.label }} : {{ form.name() }}</h3>
+<h3>{{ form.options.label }} : {{ form.options() }}</h3>
+{{ form.submit() }}
+</form>
+</body>
+</html> -->
+
+<html>
+<title> </title>
+<body>
+<form method = "POST" action="http://localhost:5000/album_result">
+  {{ form.hidden_tag() }}
+  {% for message in get_flashed_messages() %}
+  {{ message }}
+  {% endfor %}
+<h3>{{ form.name.label }} : {{ form.name() }}</h3>
+<h3>{{ form.options.label }} : {{ form.options() }}</h3>
+{{ form.submit() }}
+</form>
+</body>
+</html>

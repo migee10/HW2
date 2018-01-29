@@ -2,6 +2,9 @@
     {% for r in objects %}
         <li>
         <h2>Track Name: {{ r['trackName'] }}</h2>
+        <form method = "POST" action="http://localhost:5000/artistinfo">
+
         <div>See it on iTunes <a href="{{ r['trackViewUrl'] }}">here</a>.</div></li>
     {% endfor %}
+  </form>
 </ul>

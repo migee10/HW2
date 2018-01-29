@@ -2,11 +2,16 @@
 <body>
 
 <form action="http://localhost:5000/artistinfo" method="GET">
+  {{ form.hidden_tag() }}
+  {% for message in get_flashed_messages() %}
+  {{ message }}
+  {% endfor %}
+
   Artist to search for:<br>
   <input type="text" name="artist" value="">
   <br><br>
   <input type="submit" value="Submit">
-</form> 
+</form>
 
 </body>
 </html>
